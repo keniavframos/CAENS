@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Item</title>
+    <link rel="stylesheet" href="reservar-item.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <div id="detalhe"></div>
+  <header>
+    <!-- Logo do sistema -->
+    
+      <img id="logo" src="imagens/logo.png" alt="Logo SGI">
+    
+    
+
+
+    <nav>
+       <li><a href="#">Voltar</a></li>
+    <li><a href="#">Visualizar Itens</a></li> 
+    </nav>
+
+  </header>
+
+  <div id="titulo">
+    <!-- título da página -->
+    <h1>RESERVAR ITEM</h1>
+  </div>
+
+    <div class="forms-reservar">
+    <h2 class="title">SELECIONE O ITEM E COLOQUE SUAS INFORMAÇÕES PARA FAZER SUA RESERVA</h2>
+    <form method="POST" action="">
+
+    <select class="caixa-de-texto	" name="tipo">
+    <option value="selecione" disabled selected>Tipo</option>
+    <option value="consumo">Consumo</option>
+    <option value="emprestimo">Empréstimo</option>
+    </select>
+    <br>
+    <input type="text" placeholder="Selecione">
+    <br>
+   
+
+    <input type="number" name="ciap" placeholder="Reg. CIAP">
+    <br>
+    <input type="number" name="quant" placeholder="Quantidade">
+    <br>
+    <input type="date" placeholder="">
+  
+    
+  </form>
+  </div>
+
+    <!-- Container para centralizar o botão "retirar" -->
+    <div class="retirar-container">
+        <!-- Botão "retirar" dentro do container -->
+        <button class="retirar-button">Reservar</button>
+    </div>
+
+    <!-- JavaScript para controlar o menu -->
+    <script>
+        function alterarMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
